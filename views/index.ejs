@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Index page</h1>
+    <h2><a href="/new">Submit Form</a></h2>
+    <% messages.forEach(message => {%>
+         <ul>
+        <li>
+            User:  <%=message.user %>
+        </li>
+         <li>
+            message:  <%=message.text %>
+        </li>
+         <li>
+            date:  <%=message.added %>
+        </li>
+        <li>
+        <a href="/details/<%=message.id%>">details</a></li>
+        </ul>
+    <% }) %>
+    
+</body>
+</html>
