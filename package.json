@@ -4,7 +4,8 @@
   "description": "simple message board built with node.js express and ejs",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "populatedb": "node db/populatedb.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,10 @@
   },
   "homepage": "https://github.com/Aleks-Nikitin/messageBoard#readme",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "pg": "^8.16.3"
   }
 }

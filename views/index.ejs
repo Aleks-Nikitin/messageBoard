@@ -8,16 +8,13 @@
 <body>
     <h1>Index page</h1>
     <h2><a href="/new">Submit Form</a></h2>
-    <% messages.forEach(message => {%>
+    <% messages.map(message => {%>
          <ul>
         <li>
-            User:  <%=message.user %>
+            User:  <%=message.username %>
         </li>
          <li>
-            message:  <%=message.text %>
-        </li>
-         <li>
-            date:  <%=message.added %>
+            message:  <%=message.message %>
         </li>
         <li>
         <a href="/details/<%=message.id%>">details</a></li>

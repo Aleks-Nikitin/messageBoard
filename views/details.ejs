@@ -9,11 +9,11 @@
     <h1>Details</h1>
     <h2> <a href="/">Main Page</a></h2>
     <h2>
-        <%=message.user %>
+        <%=message[0].username %>
     </h2>
     <h2>
-        <%=message.text %>
+        <%=message[0].message %>
     </h2>
-    <h2><%=message.added %></h2>
+    <h2><%=message[0].date %></h2>
 </body>
 </html>

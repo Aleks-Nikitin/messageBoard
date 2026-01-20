@@ -9,13 +9,14 @@
    
     <h1> <%=title %></h1>
     <h2> <a href="/">Main Page</a></h2>
+    <%- include("./partials/errors.ejs")  %>
     <form action="/new" method="POST">
 
         <label for="name">Author's Name</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="username" id="name">
         
          <label for="text">Author's text message</label>
-        <input type="text" name="text" id="text">
+        <input type="text" name="message" id="text">
         <button type="submit"> Send</button>
     </form>
 </body>
